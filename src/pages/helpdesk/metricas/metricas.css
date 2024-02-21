@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#metricas{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-image: url("img/fundo.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#metricas section{
+    padding: 0 0 20px 20px;
+    width: calc(100vw - 315px);
+}
+
+#metricas a {
+    color: white;
+    text-decoration: none;
+}
+
+#metricas .Metricas {
+    margin: 30px 0 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#metricas .Metricas img{
+    width: 50px;
+    display: none;
+}
+
+
+#metricas .todos_quadrados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+#metricas .quadradinhos {
+    border-radius: 30px;
+    height: 200px;
+    width: 400px;
+    background: rgba(217, 217, 217, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 14px 17px 31px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(4.5px);
+    border-radius: 57px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 15px;
+}
+
+#metricas .barrinha_azul{
+    border-radius: 25px;
+    width: 6px;
+    height: 20px;
+    background: #01B0F1;
+}
+
+#metricas .ajuste_barrinha{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#metricas .quadradinhos P{
+    font-size: 16px;
+    width: 80%;
+}
+
+@media screen and ( max-width:1400px ) {
+
+    #metricas .aside_position{
+        border: none;
+    }
+
+    #metricas section{
+        border: none;
+    }
+}
+
+@media screen and (max-width:1045px) {
+   #metricas  aside{
+        display: none;
+    }
+
+   #metricas  section{
+        width: 100%;
+    }
+    #metricas .Metricas img{
+        display: flex;
+    }
+}

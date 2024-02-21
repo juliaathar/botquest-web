@@ -1,0 +1,116 @@
+#asideHelpdesk{
+    border: #ffffff;
+}
+
+#asideHelpdesk nav {
+    height: 100vh;
+	width:120px;
+	left:0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    backdrop-filter: blur(10px);
+
+	position:fixed;
+	overflow:hidden;
+	-webkit-transition:width .04s linear;
+	transition:width .2s linear;
+	-webkit-transform:translateZ(0) scale(1,1);
+}
+
+#asideHelpdesk nav:hover,nav aside, 
+#asideHelpdesk .lateralLink span,
+#asideHelpdesk .lateralVoltarConfig span {
+    width: 250px;
+    overflow:visible;
+}
+
+#asideHelpdesk nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#asideHelpdesk nav li {
+    position:relative;
+}
+
+#asideHelpdesk nav li>a {
+    position:relative;
+    display:table;
+    border-collapse:collapse;
+    border-spacing:0;
+    text-decoration:none;
+    -webkit-transform:translateZ(0) scale(1,1);
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear;
+
+}
+
+#asideHelpdesk .lateralLink,
+#asideHelpdesk .lateralVoltarConfig{
+    color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    gap: 35px;
+}
+
+#asideHelpdesk .lateralLink img{
+    width: 35px;
+}
+
+
+#asideHelpdesk nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+  }
+
+#asideHelpdesk .telaInicial {
+    transition:ease-in 0.2s;
+    height: 65px;
+    border-radius: 0 30px 30px 0;
+}
+
+#asideHelpdesk .lateralUser {
+    transition:ease-in 0.2s;
+    border-radius: 0 30px 30px 0;
+    height: 65px;
+}
+
+#asideHelpdesk .lateralUser:hover,
+#asideHelpdesk .lateralData:hover,
+#asideHelpdesk .telaInicial:hover{
+    padding-bottom: 5px;
+}
+
+#asideHelpdesk .lateralData {
+    transition:ease-in 0.2s;
+    border-radius: 0 30px 30px 0;
+    height: 65px;
+}
+
+#asideHelpdesk .lateralVoltarConfig:hover{
+    background: #01B0F1;
+}
+
+#asideHelpdesk .lateralVoltarConfig{
+    margin-top: 100px;
+    height: 65px;
+    border-radius: 0 30px 30px 0;
+    transition:ease-in 0.5s;
+
+    gap: 40px;
+
+}
+
+#asideHelpdesk .lateralVoltarConfig img{
+    width: 30px;
+}

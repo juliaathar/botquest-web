@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#usuario {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-image: url("img/fundo.png");
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+}
+
+#usuario button {
+    color: white;
+    text-decoration: none;
+}
+
+#usuario section {
+    height:100%;
+    width: calc(100vw - 315px);
+}
+
+#usuario .linha_divisoria {
+    width: 95%;
+    height: 2px;
+    background: #2e3b47;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+#usuario .Sub_titulos {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+#usuario button {
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    background-color: #01B0F1;
+    border-radius: 25px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    border: none;
+}
+#usuario .butao_usuarios img{
+    width: 27px;
+    height: 27px;
+}
+
+#usuario .Solicitacoes {
+    width: 90%;
+    /* height: 90%; */
+    /* background: #000B15; */
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#usuario .cad_pesquisa_usuario{
+    display: flex;
+    gap: 40px;
+}
+
+#usuario .Sub_titulos2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+#usuario .menu_hamburgue{
+    width: 50px;
+    margin: 15px;
+    display: none;
+}
+
+#usuario .alinhamento_nome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#usuario table{
+    border-collapse: collapse;
+}
+
+#usuario th,td {
+    border-bottom: 1px solid #2e3b47;
+    text-align: left;
+}
+#usuario tr{
+    cursor: pointer;
+}
+
+#usuario tr:hover {
+    background-color: #01b1f149;
+}
+
+#usuario .alinhamento_nome img{
+    width: 60px;
+    margin: 10px;
+}
+
+#usuario .usuario_ativo{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #39F229;
+}
+
+#usuario .usuario_inativo{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: red;
+}
+
+#usuario .ajustar_lapis img{
+    width: 25px;
+}
+
+
+@media screen and ( max-width:1400px ) {
+
+    #usuario .aside_position{
+        border: none;
+    }
+
+    #usuario section{
+        border: none;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    #usuario aside{
+        display: none;
+    }
+
+    #usuario section{
+        width: 100%;
+    }
+    #usuario .Resumo_recentes img{
+        display: flex;
+    }
+
+    #usuario .menu_hamburgue{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:810px) {
+    #usuario table{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #usuario thead {
+        display: none;
+    }
+
+    #usuario td {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 20ch auto;
+
+        padding: 10px 15px;
+        /* border-bottom: none; */
+    }
+
+    #usuario td:nth-child(1)::before{
+        content: " ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    #usuario td:nth-child(2)::before{
+        content: "Setor: ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+   #usuario  td:nth-child(3)::before{
+        content: "Cargo ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    #usuario td:nth-child(4)::before{
+        content: "Tipo de solicitação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    #usuario td:nth-child(5)::before{
+        content: "Data: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    #usuario td:nth-child(6)::before{
+        content: "Situação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+
+
+   #usuario  td:first-child {
+        padding-top: 24px;
+    }
+
+    #usuario td:last-child {
+        padding-bottom: 24px;
+    }   
+}
+
+@media screen and (max-width: 662px) {
+    main#usuario {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    #usuario td {
+        grid-template-columns: 12ch auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #usuario td {
+        font-size: 14px;
+    }
+}
